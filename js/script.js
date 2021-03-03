@@ -2,24 +2,26 @@
 stampa la lista ordinata alfabeticamente scrivi anche la posizione "umana" della lista in cui il nuovo utente si trova*/
 
 
-// 1 chiedere cognome
+//  creo array
+
+var listaCognomi = ["Bianchi", "Rossi", "Duzioni",
+
+  "Balsano", "Verdi"];
 
 var cognome = prompt("inserisci il tuo cognome");
 
-// 2 inserirlo in un array
 
-  // creo array con cognomi gia inseriti
+var primaLettera = cognome[0].toUpperCase();
 
-  var listaCognomi = ["Bianchi", "Rossi", "Duzioni",
+var nomeS = cognome.substring(1);
 
-    "Balsano", "Verdi"];
+var utente= primaLettera + nomeS;
 
-  listaCognomi.push(cognome);
+listaCognomi.push(utente);
 
-// 3 stampa lista ordinata alfabeticamente
 
 console.log(listaCognomi.sort());
 
-// 4 stampa posizione del nuovo cognome nella lista
 
-console.log(listaCognomi.indexOf(cognome) + 1);
+
+console.log(listaCognomi.indexOf(utente) + 1);
