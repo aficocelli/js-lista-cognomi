@@ -1,0 +1,37 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+
+}
+body{
+  font-family: arial;
+
+}
+.container{
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.box{
+  width:50%;
+  height: 100%;
+  padding:20px;
+  text-align: center;
+  background-image: url("../img/pattern.jpg");
+  overflow: auto;
+}
+ul{
+  list-style-type: none;
+}
+li{
+  padding:10px 0;
+  font-size:28px;
+  font-family: 'Ballet', cursive;
+  font-weight:bold;
+}
+h1{
+  font-size:54px;
+  color:#a9a900;
+}

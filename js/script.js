@@ -20,7 +20,7 @@ var primaLettera = cognome[0].toUpperCase();
 
 var nomeS = cognome.substring(1);
 
-var utente= primaLettera + nomeS.toLowerCase();
+var utente = primaLettera + nomeS.toLowerCase();
 
 // inserisco cognome utente nell'array
 
@@ -30,6 +30,11 @@ listaCognomi.push(utente);
 
 console.log(listaCognomi.sort());
 
+for ( var i = 0; i < listaCognomi.length; i++){
+
+document.getElementById('lista-invitati').innerHTML += "<li>" + listaCognomi[i]; + "</li>";
+
+}
 // stampo posizione del nuovo utente
 
 console.log(listaCognomi.indexOf(utente) + 1);
