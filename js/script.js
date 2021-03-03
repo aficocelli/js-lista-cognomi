@@ -20,7 +20,7 @@ var primaLettera = cognome[0].toUpperCase();
 
 var nomeS = cognome.substring(1);
 
-var utente= primaLettera + nomeS;
+var utente= primaLettera + nomeS.toLowerCase();
 
 // inserisco cognome utente nell'array
 
