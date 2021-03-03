@@ -8,20 +8,28 @@ var listaCognomi = ["Bianchi", "Rossi", "Duzioni",
 
   "Balsano", "Verdi"];
 
+// chiedo cognome all'utente
+
 var cognome = prompt("inserisci il tuo cognome");
 
+// trasformo la prima lettera in maiuscolo
 
 var primaLettera = cognome[0].toUpperCase();
+
+// sostituisco la lettera nel cognome
 
 var nomeS = cognome.substring(1);
 
 var utente= primaLettera + nomeS;
 
+// inserisco cognome utente nell'array
+
 listaCognomi.push(utente);
 
+// stampo lista in ordine alfabetico
 
 console.log(listaCognomi.sort());
 
-
+// stampo posizione del nuovo utente
 
 console.log(listaCognomi.indexOf(utente) + 1);
